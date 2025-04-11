@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel ="icon" href="C:\Users\Brigh\Pictures\Screenshots\Screenshot 2023-12-07 155805.png" type="image/x-icon"/>
+    <title>https://www.ProXcureltd.com"/html/default.asp></title>
+</head>
+<style>
+    head {background-color: #111;}
+    body {background-color: rgb(216, 191, 47);}
+    div{outline-color: rgb(38, 69, 93);}
+    @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+            :root {
+            --bg: #0e8772;
+            --col: hsl(184, 85%, 55%);
+            --heading: #293228;
+            --subheading: #3e4137c4;
+            --links: #1d4b57;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+            --bg: #28d8d2;
+            --col: #2cf8f5;
+            --heading: #3b5540;
+            --subheading: #12ecb5;
+            --links: #021317;
+            }
+        }
+        body {
+            background: var(--bg);
+            color: var(--col);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 34em;
+            margin: 0 auto;
+            font-size: calc(.7em + 1vw);
+            padding: 1em;
+        }
+        .search-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-container button {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  opacity: 0.8;
+}
+
+        h1 {
+            min-height: 2.3em;
+            background: url('../icon.png');
+            background-size: 2.3em;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 3em;
+            font-weight: normal;
+            max-width: 15em;
+            color: var(--heading);
+            font-size: 1.9em;
+        }
+        nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 100px;
+}
+
+nav ul ul li {
+  float: none;
+}
+
+nav ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+        h2 {
+            color: var(--subheading);
+            font-weight: normal;
+            margin-bottom: .5em;
+        }
+        h3 {
+            color: var(--subheading);
+            font-weight: normal;
+            margin-bottom: .5em;
+        }
+        h4{
+       color: var(--subheading);
+            font-weight: normal;
+            margin-bottom: .5em;
+            display: inline-block;
+            text-align: right;
+            
+    }
+    h5 {
+        display: block;
+        width: fit-content;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-family: monospace;
+        font-size: 80%;
+    }
+    p {
+            margin: 0 0 .5em 0;
+            padding:0;
+        }
+        a {
+            color: var(--links);
+        }
+        #headless:empty {
+            display: none;
+        }
+        #headless {
+            font-style: italic;
+        }
+
+        @keyframes glow {
+  0% { box-shadow: 0 0 10px #0e030d, 0 0 20px #ec0b16, 0 0 30px #b868ad, 0 0 40px #bd6710; }
+  50% { box-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de; }
+  100% { box-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de; }
+}
+
+.glowing-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 0 10px rgba(255,255,255,0.5);
+  animation: glow 2s ease-in-out infinite;
+}
+
+#container {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 3/1;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.blue {
+  background-color: rgb(180, 242, 11);
+  width: 95%;
+  aspect-ratio: 3/1;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 80%;
+  aspect-ratio: 4/1;
+}
+
+.blue, .green {
+  margin: 2px;
+  scroll-snap-align: end;
+  scroll-margin-bottom: 20px;
+}
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(27, 183, 236);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #11111102;
+}
+
+
+    </style>
+</head>
+  
+<body>
+  <img src="C:\Users\Brigh\Desktop\Website\Screenshots\PP Logo 3.png" alt="ProXcure logo" id="company-logo"style ="weight:100px;height:120px;" style="background-position: Top right;">
+  
+  <strong><h1 style="color:rgba(228, 230, 234, 0.618);">Welcome To ProXcure Lockings</h1>
+    
+    <div class="search-container" style="display:flexbox" style="display:var(--col)">
+      <input type="text" placeholder="Search.." name="search" style="background-color: #0b333185;">
+      <input type="submit" style="background-color: rgba(41, 46, 46, 0.301);"style="display:scroll-margin-bottom"><i class="fa fa-search"></i></button>
+    </div>
+    </style>
+  </strong> 
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#deals">Deals</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+      </header>
+<br>
+<br>
+     <p > Our company is a leading security company that specializes in biometric security systems. Our advanced technology ensures the safety and security of your business or home.</p>
+     <p>YOur go-to company for all your business and personal needs for security purposes.</p>
+     <p>Lets curb the crime together, keep our communities safer! and live a better life</p>
+     <p>We move forward together!, We move differently </p> 
+     
+    
+    
+     <h2>We focus more on using biometric Security Systems</h2>
+         <p>Our biometric security systems use cutting-edge technology to provide secure access to your premises. These systems include:</p>
+         <ul>
+           <strong><td><li>Fingerprint Recognition</li></td></strong>  
+            <Strong><td><li>Facial Recognition</li></td> </Strong>
+             <strong><td><li>Iris Scanning</li></td></strong>
+            <strong><td><li>Voice Recognition</li></td></Strong> 
+         </ul>
+         <p>By using biometric security systems, you can ensure that only authorized individuals can access your premises. Our systems are designed to be discreet and unobtrusive, allowing you to maintain a professional appearance.</p>
+        
+         <strong><small><button class="glowing-button"><a href="#about">Next</a></button>
+         </small></strong></nav>
+<hr>
+   
+
+ <!-- About Us Content -->
+ <div class="content">
+    <h2> ProXcure </h2>
+
+    <section id="home" class="tab-content home active">
+      <h3>Who is ProXcure?</h3>
+       <img src="C:\Users\Brigh\Desktop\Website\Screenshots\Screenshot 2023-12-07 161406.png" alt="ProXcure Logo"/>
+       <p>ProXcure is an innovative technology that utilizes advanced biometrics to provide secure access control solutions. 
+          Our mission is mainly focused on creating an adequate environments where companies and individuals will have a reliable service,
+           which might make a bigger difference in society</p>
+           <p>
+            <style>
+              body{
+                background-color:#3d9e3d;
+                box-shadow:0 0 10px 0 #98FB98;
+                </style>
+          How do we do that?
+          </p>
+         At ProXCURE, we are dedicated to creating innovative solutions that help individuals and companies protect their assets from theft.
+          We are proud of ourselves for learning and taking a stand against theft making major impact in certain parts of the country , we ensure that our clients stay statisfied with our solutions and hope to hear more from them all.
+           </p>
+       </section>
+    
+
+    <p>We aim at being the biggest the security company with a large supply of products and services and 
+        this will help us curb crime in our local communites in the end resulting to better living conditions as society
+        <br><br> Our aim is to provide our clients with reliable equipments that ensure their property is safe and not compromised by unforeseen circumstance 
+        such as theft or damage to the property
+     We are a small company based in the beautiful city of Pretoria. <br>
+     <br>We specialise in providing you with quality products at affordable prices. 
+       Our priority is to ensure crime in our community is minimized. 
+        <br></p>
+        <img src="C:\Users\Brigh\Desktop\Website\Screenshots\Screenshot 2023-11-18 233026.png" alt="ProXcure ltd" id="company logo"style ="weight:500px;height:420px;">
+        <section id="about">
+    <h4>About Us</h4>
+    <p>Proxcure is the ultimate choice for those looking for innovative biometric security systems. With years of experience under our belt, we have earned a loyal customer base by providing exceptional products and services..</p>
+   <p> Our company has come to the awareness to introduce prevention methods that will be beneficial to our communities in combating and eliminating criminal activities around our properties </p>
+   <img src="C:\Users\Brigh\Desktop\Website\Screenshots\Screenshot 2023-12-07 161533.png " alt="ProXcure ltd" id="description"><br>
+    <p>We are a company that specializes in creating innovative security solutions for your home or business. Our products are designed to provide you with the highest level of security for your property</p>
+    <p>We are a company that specializes in creating innovative and secure products to protect your home, business or personal belongings.</p>
+    <img src="C:\Users\Brigh\Desktop\Website\Screenshots\Screenshot 2023-12-07 163224.png" alt="ProXcure ltd" id="description"style ="weight:800px;height:420px;"><br>
+    <p>We are a company that specializes in creating innovative security solutions to protect your home and business from intruders.</p>
+</section>
+
+        <hr>
+
+<!-- Home Section -->
+<main>
+<!-- Modal -->
+<div id="myModal" class="modal">
+
+<h3 id="Products on the deal"></h3>
+<p id="price"></p>
+
+
+  <section id="deals">
+      <h3>Deals of the Week</h3>
+      <p>These are some of the products you might come across when you visit our store or\check out more what we offer on our app</p>
+      
+      <a href ="googlestore.html"> 
+        <img src = "C:\Users\Brigh\Desktop\Website\Screenshots\googlestore.png"style ="weight:50px;height:60px;" alt= "Google Play Button"/></a>
+      <small><li><p>Download Our App</p></li></small>
+      <div class="deal">
+          <img src="C:\Users\Brigh\Desktop\Website\Screenshots\Screenshot 2023-11-18 231218.png" alt="Fingerprint Scanner"style ="weight:100px;height:200px;">
+          <br><h4>Pro hidden Cam </h4>
+          <p>Get it for just R1999!</p>
+          </div>
+      <br>
+      <div class="deal">
+          <img src="C:\Users\Brigh\Desktop\Website\Screenshots\tttScreenshot 2024-02-16 014207.png" alt="Pro kit"style ="weight:100px;height:200px;">
+          <h3>Pro locking system</h3>
+          <p>Get it for just R1399!</p>
+          <br>
+          
+      </div>
+      <div class="deal">
+          <img src="https://famgroup.co.za/wp-content/uploads/2016/10/5yao1-300x300.jpg" alt="Pro Recognition door lock"style ="weight:700px;height:420px;">
+          <h3> Recognition door lock</h3>
+          <p>Get it for just R1299!</p>
+          <br>
+          <p>Hurry, While stocks lasts!!</p> 
+  </section>
+<hr>
+  
+
+  <section id="contact">
+      <h5> for more information<br>Contact Us</h5>
+      <a href="Instagram: @proxcure"><img src="C:\Users\Brigh\Desktop\Website\Screenshots\instagram01.png" alt="Instagram Logo"style ="weight:50px;height:60px;"></a>
+      <a href="Facebook: proxcurelocks"><img src="C:\Users\Brigh\Desktop\Website\Screenshots\facebook01.png" alt="Facebook Logo"style ="weight:50px;height:60px;"></a>
+  </section>
+  </main>
+  
+  
+      <p>If you have any questions or concerns, feel free to reach out to us. We are available 24/7.</p>
+    <strong><button class="glowing-button" > <a href="Email: support@proxcure.com">Send An Email</a></button></strong>
+      <p>Phone: (123) 456-7890</p>
+
+    <nav id="navbar">
+
+       
+        
+        
+     </nav>
+
+<!-- The Modal -->
+<div id="modal" class="modal>
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <!--Move the piece of code below to a different page-->
+    
+    <hr>
+
+    <section id="register">
+      <p style=" border: 50px; ;background-color: #213f21;">Welcome back!! Lets get you started</p>
+      <p style ="border:50px;background-color:  #213f21;">Please login</p>
+    
+      <div id="Form" style ="container:  width=auto;">
+            <form action="/action_page.php"> </form>
+            Username:<br>
+            <input type="text" name="username" required style="display:inline-flexbox"><br>
+            Password:<br>
+            <input type="password" name="password" required><br><br>
+            <strong> <button class="glowing-button"> 
+        <a href="#signin">Sign In</a></button><br></strong>
+          
+          </div>
+          
+          <div id="NoAccount" ><p>Don't have an account?</p> 
+            <button class="glowing-button"><a href = "registration.html">  Sign Up!</a></button>
+          </div>  
+      
+    
+<br>
+          <strong><button class="glowing-button"><a href="#register">Register to become an active community member</a></button></strong>  
+    </nav>
+  </section>
+</main>
+</body>
+</html>
+   <!-- Footer Section -->
+   <br>
+  <footer>
+    &copy;2021 ProXcure Lockskies | Designed by B.ntokzin
+  © 2023 Proxcure. All rights reserved.
+    </footer>
+

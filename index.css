@@ -1,0 +1,55 @@
+
+head {
+    background-color:black; /* dark black background color */
+    color :gold; /* gold text color */
+  }
+
+
+  
+  .style {
+    background-color: #222222;
+    width: 200px; /* set the width of the logo */
+    height: auto; /* allow the height to scale automatically */
+    margin-bottom: 20px; /* add some space below the logo */
+  }
+  
+  .body {
+    background-color: #ffd700; /* gold background color for the header */
+    padding: 20px; /* add some padding to the header */
+  }
+  
+  .header {
+   
+    margin: 0; /* remove the default margin from the h1 element */
+  }
+  
+  .content {
+    background-color: #ffd700;
+    font-family: Arial, sans-serif; /* use the Arial font for this section */
+    line-height: 1.6em; /* set the line height to 1.6 times the normal line height */
+    max-width: 85%; /* restrict the content area to 85%
+    padding: 20px; /* add some padding to the main content area */
+  }
+  .main{
+    background-color: #ffd700;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    width: 63%;/* make sure that the main column is always wider than the side 
+    column by setting a fixed width in pixels or percentages *
+  }
+  
+  .gold-button {
+    background-color: #ffd700; /* gold background color for the button */
+    color: #222222; /* dark black text color for the button */
+    padding: 10px 20px; /* add some padding to the button */
+    border: none; /* remove the default border from the button */
+    border-radius: 5px; /* add some rounded corners to the button */
+    text-transform: uppercase; /* convert the text to uppercase */
+    font-weight: bold; /* make the text bold */
+    cursor: pointer; /* add a pointer cursor when hovering over the button */
+  }
+  
+  .gold-button:hover {
+    background-color: #e0c100; /* slightly darker gold background color on hover */
+  }
+  </html>
